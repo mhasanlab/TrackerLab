@@ -1,18 +1,46 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.2.0" />
-    <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MailKit" Version="4.2.0" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TrackerLab.Data\TrackerLab.Data.csproj" />
+		<ProjectReference Include="..\TrackerLab.Shared\TrackerLab.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="CommandHandlers\Issues\" />
+	  <Folder Include="CommandHandlers\IssueTypes\" />
+	  <Folder Include="CommandHandlers\Comments\" />
+	  <Folder Include="CommandHandlers\Sprints\" />
+	  <Folder Include="CommandHandlers\Projects\" />
+	  <Folder Include="Commands\Issues\" />
+	  <Folder Include="Commands\IssueTypes\" />
+	  <Folder Include="Commands\Comments\" />
+	  <Folder Include="Commands\Sprints\" />
+	  <Folder Include="Commands\Projects\" />
+	  <Folder Include="Queries\Issues\" />
+	  <Folder Include="Queries\IssueTypes\" />
+	  <Folder Include="Queries\Users\" />
+	  <Folder Include="Queries\Sprints\" />
+	  <Folder Include="Queries\Projects\" />
+	  <Folder Include="QueryHandlers\Issues\" />
+	  <Folder Include="QueryHandlers\IssueTypes\" />
+	  <Folder Include="QueryHandlers\Users\" />
+	  <Folder Include="QueryHandlers\Sprints\" />
+	  <Folder Include="QueryHandlers\Projects\" />
+	</ItemGroup>
 
 </Project>
